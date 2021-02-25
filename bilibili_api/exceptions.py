@@ -54,6 +54,20 @@ class UploadException(BilibiliApiException):
     def __init__(self, msg: str):
         super().__init__(msg)
 
+
+class NoLoginKeyException(BilibiliApiException):
+    def __init__(self):
+        self.msg = "请提供扫码登录所用的OAuthKey"
+
+class QrCodeException(BilibiliApiException):
+    def __init__(self):
+        self.msg = "二维码错误"
+
+        
+class QrCodeTimtoutException(BilibiliApiException):
+    def __init__(self):
+        self.msg = "登录过期"
+
 """
 奇怪的异常增加了！
 """

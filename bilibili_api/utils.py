@@ -381,7 +381,9 @@ def request(method: str, url: str, params=None, data=None, cookies=None, headers
             con = json.loads(re.match(".*?({.*}).*", content, re.S).group(1))
         else:
             con = json.loads(content)
-        if con["code"] != 0:
+        if 'code' not in con or con["code"] != 0:
+            if "code" not in con:
+                con['code'] = -1 if 'data'not in con else con['data']
             if "message" in con:
                 msg = con["message"]
             elif "msg" in con:

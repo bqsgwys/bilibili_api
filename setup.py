@@ -30,7 +30,8 @@ setuptools.setup(
         "websockets >= 8.1",
         "beautifulsoup4 >= 4.9.1",
         "aiohttp >= 3.6.2",
-        "cssutils >= 1.0.2"
+        "cssutils >= 1.0.2",
+        "qrcode-terminal >= 0.8"
     ],
     package_data={
         'bilibili_api': [

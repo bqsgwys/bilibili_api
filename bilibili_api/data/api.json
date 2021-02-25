@@ -599,8 +599,7 @@
         "url": "https://api.bilibili.com/x/relation/tags",
         "method": "GET",
         "verify": true,
-        "params": {
-        },
+        "params": {},
         "comment": "获取自己的关注分组列表，用于操作关注"
       },
       "get_user_in_which_subscribe_groups": {
@@ -683,7 +682,7 @@
   },
   "bangumi": {
     "info": {
-      "meta":{
+      "meta": {
         "url": "https://api.bilibili.com/pgc/review/user",
         "method": "GET",
         "verify": false,
@@ -692,8 +691,8 @@
         },
         "comment": "获取番剧信息"
       },
-      "episodes_list":{
-        "url":"https://api.bilibili.com/pgc/web/season/section",
+      "episodes_list": {
+        "url": "https://api.bilibili.com/pgc/web/season/section",
         "method": "GET",
         "verify": false,
         "params": {
@@ -701,8 +700,8 @@
         },
         "comment": "获取番剧剧集列表"
       },
-      "season_status":{
-        "url":"https://api.bilibili.com/pgc/web/season/stat",
+      "season_status": {
+        "url": "https://api.bilibili.com/pgc/web/season/stat",
         "method": "GET",
         "verify": false,
         "params": {
@@ -710,8 +709,8 @@
         },
         "comment": "获取番剧播放量，追番等信息"
       },
-      "short_comment":{
-        "url":"https://api.bilibili.com/pgc/review/short/list",
+      "short_comment": {
+        "url": "https://api.bilibili.com/pgc/review/short/list",
         "method": "GET",
         "verify": false,
         "params": {
@@ -722,8 +721,8 @@
         },
         "comment": "获取番剧短评"
       },
-      "long_comment":{
-        "url":"https://api.bilibili.com/pgc/review/long/list",
+      "long_comment": {
+        "url": "https://api.bilibili.com/pgc/review/long/list",
         "method": "GET",
         "verify": false,
         "params": {
@@ -735,7 +734,7 @@
         "comment": "获取番剧长评"
       },
       "relate_video": {
-        "url":"https://api.bilibili.com/x/web-interface/tag/top?pn=10&ps=24&tid=8583026",
+        "url": "https://api.bilibili.com/x/web-interface/tag/top?pn=10&ps=24&tid=8583026",
         "method": "GET",
         "verify": false,
         "params": {
@@ -757,8 +756,8 @@
       }
     },
     "operate": {
-      "follow_add":{
-        "url":"https://api.bilibili.com/pgc/web/follow/add",
+      "follow_add": {
+        "url": "https://api.bilibili.com/pgc/web/follow/add",
         "method": "POST",
         "verify": true,
         "params": {
@@ -766,8 +765,8 @@
         },
         "comment": "追番"
       },
-      "follow_del":{
-        "url":"https://api.bilibili.com/pgc/web/follow/del",
+      "follow_del": {
+        "url": "https://api.bilibili.com/pgc/web/follow/del",
         "method": "POST",
         "verify": true,
         "params": {
@@ -775,8 +774,8 @@
         },
         "comment": "取消追番"
       },
-      "follow_status":{
-        "url":"https://api.bilibili.com/pgc/web/follow/status/update",
+      "follow_status": {
+        "url": "https://api.bilibili.com/pgc/web/follow/status/update",
         "method": "POST",
         "verify": true,
         "params": {
@@ -789,7 +788,7 @@
   },
   "live": {
     "info": {
-      "room_play_info":{
+      "room_play_info": {
         "url": "https://api.live.bilibili.com/xlive/web-room/v1/index/getRoomPlayInfo",
         "method": "GET",
         "verify": false,
@@ -798,7 +797,7 @@
         },
         "comment": "获取房间信息（真实房间号，封禁情况等）"
       },
-      "chat_conf":{
+      "chat_conf": {
         "url": "https://api.live.bilibili.com/room/v1/Danmu/getConf",
         "method": "GET",
         "verify": false,
@@ -807,7 +806,7 @@
         },
         "comment": "获取聊天弹幕服务器配置信息(websocket)"
       },
-      "room_info":{
+      "room_info": {
         "url": "https://api.live.bilibili.com/xlive/web-room/v1/index/getInfoByRoom",
         "method": "GET",
         "verify": false,
@@ -816,7 +815,7 @@
         },
         "comment": "获取直播间信息（标题，简介等）"
       },
-      "user_info_in_room":{
+      "user_info_in_room": {
         "url": "https://api.live.bilibili.com/xlive/web-room/v1/index/getInfoByUser",
         "method": "GET",
         "verify": true,
@@ -825,7 +824,7 @@
         },
         "comment": "获取自己在直播间的信息（粉丝勋章等级，直播用户等级等）"
       },
-      "user_info":{
+      "user_info": {
         "url": "https://api.live.bilibili.com/xlive/web-ucenter/user/get_user_info",
         "method": "GET",
         "verify": true,
@@ -844,7 +843,7 @@
         },
         "comment": "获取大航海列表"
       },
-      "seven_rank":{
+      "seven_rank": {
         "url": "https://api.live.bilibili.com/rankdb/v1/RoomRank/webSevenRank",
         "method": "GET",
         "verify": false,
@@ -854,7 +853,7 @@
         },
         "comment": "获取七日榜"
       },
-      "fans_medal_rank":{
+      "fans_medal_rank": {
         "url": "https://api.live.bilibili.com/rankdb/v1/RoomRank/webMedalRank",
         "method": "GET",
         "verify": false,
@@ -864,7 +863,7 @@
         },
         "comment": "获取粉丝勋章排行榜"
       },
-      "black_list":{
+      "black_list": {
         "url": "https://api.live.bilibili.com/liveact/ajaxGetBlockList",
         "method": "GET",
         "verify": true,
@@ -904,7 +903,7 @@
       }
     },
     "operate": {
-      "send_danmaku":{
+      "send_danmaku": {
         "url": "https://api.live.bilibili.com/msg/send",
         "method": "POST",
         "verify": true,
@@ -920,7 +919,7 @@
         },
         "comment": "发送直播间弹幕，有的参数不确定因为自己不搞这块没权限发一些样式的弹幕"
       },
-      "add_block":{
+      "add_block": {
         "url": "https://api.live.bilibili.com/banned_service/v2/Silent/add_block_user",
         "method": "POST",
         "verify": true,
@@ -932,7 +931,7 @@
         },
         "comment": "封禁用户"
       },
-      "del_block":{
+      "del_block": {
         "url": "https://api.live.bilibili.com/banned_service/v1/Silent/del_room_block_user",
         "method": "POST",
         "verify": true,
@@ -1336,11 +1335,11 @@
         "method": "GET",
         "verify": false,
         "params": {
-		  "mobi_app": "android / iphone / ipad",
-		  "platform": "android / ios    / ios",
-		  "height": "屏幕高度",
-		  "width": "屏幕宽度",
-		  "birth": "生日日期(四位数，例 0101)"
+          "mobi_app": "android / iphone / ipad",
+          "platform": "android / ios    / ios",
+          "height": "屏幕高度",
+          "width": "屏幕宽度",
+          "birth": "生日日期(四位数，例 0101)"
         },
         "comment": "获取开屏启动画面"
       },
@@ -1349,12 +1348,31 @@
         "method": "GET",
         "verify": false,
         "params": {
-		  "mobi_app": "android / iphone / ipad",
-		  "platform": "android / ios    / ios",
-		  "screen_height": "屏幕高度",
-		  "screen_width": "屏幕宽度"
+          "mobi_app": "android / iphone / ipad",
+          "platform": "android / ios    / ios",
+          "screen_height": "屏幕高度",
+          "screen_width": "屏幕宽度"
         },
         "comment": "获取特殊开屏启动画面"
+      }
+    }
+  },
+  "login": {
+    "qrcode": {
+      "get_qr_code": {
+        "url": "http://passport.bilibili.com/qrcode/getLoginUrl",
+        "method": "GET",
+        "verify": false,
+        "comment": "获得登录链接"
+      },
+      "get_login_info": {
+        "url": "http://passport.bilibili.com/qrcode/getLoginInfo",
+        "method": "POST",
+        "verify": false,
+        "comment": "扫码登录,验证登录",
+        "data": {
+          "oauthKey": "登录链接号"
+        }
       }
     }
   }
